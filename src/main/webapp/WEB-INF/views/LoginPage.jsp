@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@include file="header.jsp" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<html>
+<body>
+<form action="perform_login" method="post">
+
+<table border="1">
+<tr>
+<td>User Name:</td>
+<td><input type="text" name="username"></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type="password" name="password"></td>
+</tr>
+<tr>
+<td><input type="submit" value="Submit"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
+ <div class="wrapper">
+       <img src="resources/images/flip_image.png" class="img-responsive" alt="Responsive image">
+        <div class="sol-sm-6">
+        
+        </div>
+     </div>
+     
+     <c:if test="${loginClicked}">
+     <c:import url=""></c:import>
+     </c:if>
+   <%@include file="footer.jsp" %></body>
